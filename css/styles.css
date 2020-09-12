@@ -15,9 +15,10 @@ h3 {
     font-size: 2rem;
 }
 
-p {
+p, a {
     font-size: 1.2rem;
     font-weight: 400;
+    color: var(--Dark_Grayish_Blue);
 }
 
 body {
@@ -34,7 +35,8 @@ button {
     height: 50px;
     border: 0px;
     border-radius: 50px 50px;
-    color: #ffffff
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .btn1 {
@@ -45,12 +47,34 @@ button {
     background-color: var(--Light_Blue);
 }
 
+.footer-logo img {
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: var(--Grayish_Blue);
+    width: 100%;
+    margin-top: 100px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.social-icons a {
+    letter-spacing: 20px;
+}
+
+
+
 @media (max-width: 420px) {
     body {
         padding: 10px auto;
     }
 
-    h1, h3, p {
+    h1, h3, p, a {
         width: 90%;
         margin: 20px auto;
     }
@@ -71,6 +95,10 @@ button {
         padding-top: 50px;
     }
 
+    button {
+        width: 80%;
+    }
+
     header {
         background: url(../images/bg-header-mobile.png);
         background-repeat: no-repeat;
@@ -84,17 +112,26 @@ button {
     }
 
     .access {
-        margin: 250px auto;
+        margin: 150px auto;
     }
 
     .logos {
         display: flex;
         flex-direction: column;
-        
     }
 
     .logos img {
         padding: 50px 100px;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    footer li, a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 50px auto;
     }
 }
 
