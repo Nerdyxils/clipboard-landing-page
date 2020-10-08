@@ -7,16 +7,18 @@
 
 h1 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
+h2,
 h3 {
     font-weight: 600;
     font-size: 2rem;
 }
 
-p, a {
-    font-size: 1.2rem;
+p,
+a {
+    font-size: 1rem;
     font-weight: 400;
     color: var(--Dark_Grayish_Blue);
 }
@@ -27,7 +29,7 @@ body {
     margin: 0;
     outline: none;
     width: 100%;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: "Bai Jamjuree", sans-serif;
 }
 
 button {
@@ -37,6 +39,7 @@ button {
     border-radius: 50px 50px;
     color: #ffffff;
     cursor: pointer;
+    margin-top: 2em;
 }
 
 .btn1 {
@@ -47,39 +50,155 @@ button {
     background-color: var(--Light_Blue);
 }
 
+header {
+    background: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.main {
+    margin: 50px auto;
+}
+
+.main-text p,
+.keep-track p,
+.access p,
+.clipboard p {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.keep-track {
+    margin-top: 8em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    margin-left: -5em;
+}
+
+.pc-txt {
+    text-align: left;
+    width: 30%;
+}
+
+.col+.col {
+    margin-left: 8em;
+}
+
+.access {
+    margin: 8em auto;
+}
+
+.space {
+    width: 80%;
+    margin: 5em auto;
+}
+
+.first p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.super_grid+.super_grid {
+    margin-left: 1em;
+}
+
+.logos {
+    margin: 8em auto;
+}
+
+.logos .source {
+    margin-left: 0px;
+}
+
+.logos img {
+    margin-left: 4em;
+}
+
+.clipboard {
+    margin-bottom: 50px;
+
+}
+
 .footer-logo img {
     width: 70px;
     height: 70px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-left: 150px;
 }
 
 footer {
     background-color: var(--Grayish_Blue);
     width: 100%;
-    margin-top: 100px;
+    padding: 30px 0;
+    text-align: left;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
 }
 
 footer ul {
     list-style: none;
+    line-height: 40px;
+}
+
+footer li,
+a {
+    color: var(--Dark_Grayish_Blue);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin-left: 200px;
 }
 
 .social-icons a {
-    letter-spacing: 20px;
+    margin-left: 20px;
 }
 
+.social-icons img:hover {
+    filter: brightness(50%) saturate(69%);
+}
 
+.attribution {
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 @media (max-width: 420px) {
     body {
         padding: 10px auto;
+        margin: 0;
     }
 
-    h1, h3, p, a {
+    h1,
+    h3,
+    p,
+    a {
         width: 90%;
         margin: 20px auto;
     }
 
-    h1  {
+    h1 {
         margin-top: 50px;
     }
 
@@ -91,7 +210,8 @@ footer ul {
         margin-top: 20px;
     }
 
-    .logo, .super  {
+    .logo,
+    .super {
         padding-top: 50px;
     }
 
@@ -103,35 +223,83 @@ footer ul {
         background: url(../images/bg-header-mobile.png);
         background-repeat: no-repeat;
         background-position: top center;
+        width: 100%;
+    }
+
+    .main-text p,
+    .keep-track p,
+    .access p,
+    .clipboard p {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    .super_grid+.super_grid {
+        margin-left: 0em;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
     }
 
     .image-pc img {
         width: 300px;
         height: 200px;
-        margin: 50px auto; 
+        margin: 50px 0;
+    }
+
+    .left {
+        margin-left: 0em;
+    }
+
+    .pc-txt {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .col+.col {
+        margin: 0 auto;
     }
 
     .access {
         margin: 150px auto;
     }
 
-    .logos {
+    .logos,
+    .footer-links {
         display: flex;
         flex-direction: column;
     }
 
     .logos img {
         padding: 50px 100px;
+        margin-left: 0;
     }
 
-    .links {
+    footer {
         text-align: center;
+
     }
 
-    footer li, a {
-        color: #ffffff;
-        text-decoration: none;
+    .social-icons {
         margin: 50px auto;
     }
-}
 
+    ul.footer-links__one {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    footer li,
+    a {
+        margin: 0 auto;
+    }
+
+    .footer-logo img {
+        margin: 50px auto;
+    }
+
+}
